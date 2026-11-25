@@ -6,7 +6,12 @@ printers; SVG with Jinja placeholders.*
 
 Jede Vorlage ist **eine SVG-Datei** mit Platzhaltern. Die Wareneingangs-App füllt die
 Platzhalter mit den Daten der eingebuchten Position, zeigt eine Vorschau und druckt auf dem
-gewählten Drucker. Angeboten werden nur Vorlagen, deren Rollenbreite zum Drucker passt.
+gewählten Drucker. Angeboten werden nur Vorlagen, deren Rollenbreite zum Drucker passt: **es muss ein Drucker
+mit dieser Rolle als aktiver Drucker ausgewählt sein** ("Auswählen" in der App – die Rolle
+meldet der Drucker selbst). Eine 62-mm-Vorlage erscheint also nicht, solange ein
+38-mm-Drucker aktiv ist.
+
+Technische Details für Entwickler und KI-Agenten: [AGENTS.md](AGENTS.md).
 
 **So kommen Vorlagen in die App:**
 
