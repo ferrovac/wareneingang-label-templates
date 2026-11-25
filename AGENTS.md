@@ -87,8 +87,9 @@ placeholders; the values come from the app at print time.
 
 | Placeholder | Content | Where it comes from |
 |---|---|---|
-| `part_no` | part number as ferp shows it, incl. variant, e.g. `23337-0130-0006` | ferp Incoming list (ferp's obsolete marker `[` removed) |
-| `part_code` | base part number, e.g. `23337` | ferp Incoming list |
+| `part_no` | part number exactly as ferp shows it, incl. variant, e.g. `23337-0130-0006`; ferp shows an **obsolete** part in brackets, `[26129]`, and so does the label (wanted) | ferp Incoming list |
+| `part_code` | base part number, e.g. `23337` (no variant, no brackets) | ferp Incoming list |
+| `obsolete` | true if the part is obsolete in ferp (its number is in `[ ]`) | ferp Incoming list |
 | `title` | part title | ferp |
 | `group` | product group letter | ferp |
 | `po` | purchase order number (O-ID) — the **oldest** open order of this position | ferp (`PO` document; ferp serves deliveries oldest order first) |

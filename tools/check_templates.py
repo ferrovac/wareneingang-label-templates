@@ -17,9 +17,9 @@ from jinja2 import Environment, StrictUndefined, meta
 from jinja2.exceptions import TemplateError
 
 # Keep in sync with the app (wareneingang/labels/context.py, VARIABLES) and README.md.
-KNOWN = {"part_no", "part_code", "title", "group", "po", "pos", "aid", "aids", "uhv", "rev",
-         "material", "supplier", "foreign_code", "quantity", "date", "user"}
-EXAMPLE = {k: "X & <Y>" for k in KNOWN} | {"uhv": False, "quantity": 1}
+KNOWN = {"part_no", "part_code", "obsolete", "title", "group", "po", "pos", "aid", "aids",
+         "uhv", "rev", "material", "supplier", "foreign_code", "quantity", "date", "user"}
+EXAMPLE = {k: "X & <Y>" for k in KNOWN} | {"uhv": False, "obsolete": False, "quantity": 1}
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 

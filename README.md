@@ -64,8 +64,9 @@ leer gedruckt.
 
 | Platzhalter | Inhalt |
 |---|---|
-| `{{ part_no }}` | Artikelnummer wie in ferp angezeigt, inkl. Variante (z. B. 23337-0130-0006) |
+| `{{ part_no }}` | Artikelnummer wie in ferp angezeigt, inkl. Variante (z. B. 23337-0130-0006); veraltete Artikel wie in ferp in eckigen Klammern (z. B. [26129]) |
 | `{{ part_code }}` | Basis-Artikelnummer ohne Variante (z. B. 23337) |
+| `{{ obsolete }}` | wahr, wenn der Artikel in ferp veraltet ist (Nummer in [ ]) |
 | `{{ title }}` | Bezeichnung des Artikels |
 | `{{ group }}` | Produktgruppe |
 | `{{ po }}` | Bestellnummer (O-ID) – die älteste offene Bestellung dieser Position |
