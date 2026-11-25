@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="62mm" viewBox="0 0 80 62">
+  <!--
+    Wareneingangslabel für Lagerboxen — 62 mm roll, 80 mm long.
+    Converted 1:1 from the P-touch file "Wareneingangslabel für Lagerboxen.lbx"
+    (positions in mm, Arial 14 pt = 4.94 mm). The part number is printed twice on
+    purpose: the label is glued over the edge of the box.
+    Placeholders: see README.md in this folder.
+  -->
+  <metadata id="label" data-name="Lagerboxen" data-roll="62" data-length="80"
+            data-description="Lagerboxen: Teilenummer 2×, Bestellung, Reinheit, Revision"/>
+  <rect x="0" y="0" width="80" height="62" fill="#ffffff"/>
+  <g font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="4.94" fill="#000000">
+    <text x="5.08" y="8.96" font-weight="bold">{{ part_no }}</text>
+    <line x1="3.53" y1="12.14" x2="76.45" y2="12.14" stroke="#000000" stroke-width="0.21"/>
+    <text x="5.08" y="21.66" font-weight="bold">{{ part_no }}</text>
+    <text x="5.08" y="37.08">{% if po %}PO_{{ po }}{% endif %}</text>
+    <text x="5.08" y="54.05">{% if not uhv %}not clean{% endif %}</text>
+    <text x="74.89" y="54.01" text-anchor="end">{% if rev %}Rev. {{ rev }}{% endif %}</text>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="98mm" height="38mm" viewBox="0 0 98 38">
+  <!--
+    Wareneingang BU's, TU's, TUMD's — 38 mm roll, 98 mm long.
+    Converted from the P-touch file "Wareneingangslabel für BUs und TUs.lbx".
+    "Geprüft" stays a blank line to sign by hand; L and SN are typed in at booking
+    (left empty they print as a blank line too).
+  -->
+  <metadata id="label" data-name="BUs und TUs" data-roll="38" data-length="98"
+            data-inputs="length:Länge L (mm);sn:Seriennummer"
+            data-description="BUs/TUs/TUMDs: Logo, Teilenummer, Länge, Montage, Prüfung, SN"/>
+  <rect x="0" y="0" width="98" height="38" fill="#ffffff"/>
+  <image x="2.96" y="1.55" width="17.39" height="17.39"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM0AAADNAQAAAAAzx8nEAAAAtUlEQVR42u2XOw7CMBBEn2MKunAAjsLRKELHsXIkShdGQ8FHNuAgUPjFO01kjzZ2ntajGEwmk2lqcgD4mM6pAaApV5lVgzW76hIDZZYdB0BJShoos0ZNUR99KFhLVuHVbZxeLikdR7f7QVDJr8jmPWt9i0YrSVL3abzzkrUm3CcPWxZj4G0vX1trAuQ0Bqq6clXWqQ8P0d79eVTexOUAqGo76hwpz3VUFkR9RQzD8dHbpX9qOgAPdjgUiVAG1QAAAABJRU5ErkJggg=="/>
+  <g font-family="Arial, Liberation Sans, Helvetica, sans-serif" fill="#000000" font-weight="bold">
+    <text x="23.5" y="11.92" font-size="4.34">Wareneingang BU's, TU's, TUMD's</text>
+    <text x="2.96" y="23.79" font-size="4.94">Part-Nr.: {{ part_no }}</text>
+    <text x="56" y="23.79" font-size="4.94">L= {{ length or "______" }} mm</text>
+    <text x="2.96" y="29.47" font-size="4.94">AID: {{ aid or "______" }}</text>
+    <text x="56" y="29.47" font-size="4.94">Geprüft: _______</text>
+    <text x="2.96" y="35.15" font-size="4.94">SN: {{ sn or "_____________" }}</text>
+  </g>
+</svg>
