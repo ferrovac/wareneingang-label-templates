@@ -70,7 +70,7 @@ leer gedruckt.
 | `{{ group }}` | Produktgruppe |
 | `{{ po }}` | Bestellnummer (O-ID) – die älteste offene Bestellung dieser Position |
 | `{{ pos }}` | alle offenen Bestellnummern, mit Komma getrennt |
-| `{{ aid }}` | Montage (A-ID), für die die Teile reserviert sind – die älteste |
+| `{{ aid }}` | Montage (A-ID), für die die Teile reserviert sind – die älteste (Entnahmen ohne Montage zählen nicht) |
 | `{{ aids }}` | alle Montagen, mit Komma getrennt |
 | `{{ uhv }}` | wahr, wenn ferp den Artikel für die Standard-UHV-Reinigung markiert |
 | `{{ rev }}` | Revision des Artikels (leer, falls keine oder nicht lesbar) |

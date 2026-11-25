@@ -93,8 +93,8 @@ placeholders; the values come from the app at print time.
 | `group` | product group letter | ferp |
 | `po` | purchase order number (O-ID) — the **oldest** open order of this position | ferp (`PO` document; ferp serves deliveries oldest order first) |
 | `pos` | all open order numbers, comma-separated | ferp |
-| `aid` | assembly (A-ID) the parts are reserved for — the oldest | ferp |
-| `aids` | all assemblies, comma-separated | ferp |
+| `aid` | assembly (A-ID) the parts are reserved for — the oldest (stock withdrawals without an assembly, which ferp lists in the same column, are skipped) | ferp |
+| `aids` | all assembly numbers, comma-separated | ferp |
 | `uhv` | `true` if ferp marks the part for the standard UHV cleaning process | ferp (blue dashed material in ferp) |
 | `rev` | part revision, e.g. `A`; **may be empty** (part has none, or the user's ferp group can't open the part page) | ferp part page |
 | `material` | material | ferp |
